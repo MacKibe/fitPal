@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    width: 90%;
+    font-size: 170%;
+    background-color: #EFEBE9;
+}
+
+header{
+    font-size: 80%;
+    padding: .2%;
+    padding: 0 2%;  
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    justify-content: space-between;
+}
+
+img {
+    width: 10%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.content-side {
+    /* margin: 20%; */
+    /* font-size: 2rem; */
+}
+
+.login-menu {
+    display: flex;
+    width: 11%;
+    justify-content: space-around;
+}
+
+button {
+    padding: .5rem 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.login-form,
+.signUp-form {
+    display: none;
+  }
+
+.login-form form, 
+.signUp-form form {
+    background-color: #EDE7F6;
+    padding: 8% 10%;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.login-form input[type=text], #login-form input[type=password],
+.signUp-form input[type=text], #signUp-form input[type=password], #signUp-form input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.login-form input[type=submit],
+.signUp-form input[type=submit] {
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 2% 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-form input[type=submit]:hover,
+.signUp-form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+span {
+    cursor: pointer;
+}
