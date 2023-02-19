@@ -1,78 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>fitPal</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/styles.css'>
+	<title>My Fitness Page</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-    
-    <header>
-        <!-- logo section -->
-        <h1>fitPal<b>.</b></h1>
-        <div class="login-menu">
-            <button onclick="showLoginForm()" href="">Login</button>
-            <button onclick="showRegForm()" href="">SignUp</button>
-        </div>
-    </header>
+	<header>
+		<h1>My Fitness Page</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <main>
-        <div class="content-side">
-          <img src="./images/gym_icon.png" alt="">
-          <p>Your fitness partner</p>
-          <p>Achieve your fitness Goals.</p>
-        </div>
+	<main>
+		<section class="hero">
+			<h2>Get Fit and Stay Healthy</h2>
+			<p>Join our fitness program today and transform your body and mind.</p>
+			<button>Join Now</button>
+		</section>
 
-        <div class="login-form" id="login-form">
-            <form>
-              <label for="username">
-                Username/email:
-                <input type="text" id="username" name="username">
-              </label>
-              <label for="password">
-                Password:
-                <input type="password" id="password" name="password">
-              </label>
-              <input type="submit" value="Submit"><!-- Close button for the login form -->
-              <span>Dont have an account <a href="#" onclick="displayRegForm()">signUp</a></span>
-            </form> 
-        </div>
+		<section class="features">
+			<h2>Our Program Features</h2>
+			<ul>
+				<li>Personalized workout plans</li>
+				<li>Expert nutrition guidance</li>
+				<li>Accountability and support</li>
+			</ul>
+		</section>
 
-        <div class="signUp-form" id="signUp-form">
-            <form>
-              <label for="username">
-                Username:
-                <input type="text" id="username" name="username">
-              </label>
-              <label for="username">
-                Email:
-                <input type="text" id="email" name="email">
-              </label>
-              <label for="username">
-                Phone Number:
-                <input type="number" id="phoneNumber" name="phoneNumber">
-              </label>
-              <label for="username">
-                Password:
-                <input type="password" id="password" name="password">
-              </label>
-              <label for="password">
-                Confirm password:
-                <input type="password" id="password" name="password">
-              </label>
-              <input type="submit" value="Submit"><!-- Close button for the login form -->
-              <span>Have an account <a href="#" onclick="displayLoginForm()">Login</a></span>
-            </form> 
-        </div>
-    </main>
+		<section class="pricing">
+			<h2>Pricing Plans</h2>
+			<ul>
+				<li><strong>Basic Plan:</strong> $29.99/month</li>
+				<li><strong>Premium Plan:</strong> $49.99/month</li>
+				<li><strong>Ultimate Plan:</strong> $99.99/month</li>
+			</ul>
+			<button>Choose Your Plan</button>
+		</section>
+	</main>
 
-    <footer>
-        .
-    </footer>
+	<footer>
+		<p>&copy; 2023 My Fitness Page. All rights reserved.</p>
+	</footer>
 
-    <script src='./js/index.js'></script>
-
+	<script src="script.js"></script>
 </body>
 </html>
