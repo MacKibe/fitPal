@@ -6,70 +6,65 @@
 
 body {
     margin: auto;
-    width: 90%;
     font-size: 170%;
     background-color: #EFEBE9;
 }
 
 header{
     font-size: 80%;
-    padding: .2%;
-    padding: 0 2%;  
+    padding: 1.4% 10%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
-    justify-content: space-between;
+    background-color: #fca03d;
 }
 
-img {
-    width: 10%;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-}
-
-.content-side {
-    /* margin: 20%; */
-    /* font-size: 2rem; */
-}
-
-.login-menu {
-    display: flex;
-    width: 11%;
-    justify-content: space-around;
+header a {
+    color: #fff;
+    text-decoration: none;
 }
 
 button {
-    padding: .5rem 1rem;
+    padding: .7rem 1.8rem;
     background-color: rgb(255, 255, 255);
+}
+
+header button:hover {
+    background-color: #fca03d;
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 .login-form,
 .signUp-form {
-    display: none;
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.479);
+    z-index: 9999; /* make sure the form is on top of other elements */
+    display: none; /* hide the form by default */
   }
 
 .login-form form, 
 .signUp-form form {
-    background-color: #EDE7F6;
+    background-color: #ffffff75;
     padding: 8% 10%;
     width: 100%;
-    margin-top: 2%;
 }
 
-.login-form input[type=text], #login-form input[type=password],
-.signUp-form input[type=text], #signUp-form input[type=password], #signUp-form input[type=number] {
+.login-form input[type=text],
+#login-form input[type=password],
+.signUp-form input[type=text],
+#signUp-form input[type=password],
+#signUp-form input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
 .login-form input[type=submit],
@@ -91,3 +86,93 @@ button {
 span {
     cursor: pointer;
 }
+
+.content-side {
+    background-image: url("../images/wallpaper.jpg");
+    background-position: center;
+    height: 55dvh;
+    width: 100%;
+    color: #fff;
+}
+
+article {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+}
+
+ article p {
+    padding: 2%;
+    width: 60%;
+    margin: auto;
+ }
+
+ p b {
+    font-size: 150%;
+    margin: 2% 0 ;
+ }
+
+ article button:hover {
+    background-color: #000000;
+    color: #fff;
+    border: 4px solid #fff;
+    padding: 1.2% 3%;
+    font-weight: 700;
+ }
+
+ nav {
+    background-color: #ccc;
+    position: sticky;
+    top: 0;
+    font-size: 1rem;
+    margin: .5% 0;
+ }
+
+ nav ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ nav ul li {
+    background-color: #fca03d73;
+    list-style: none;
+    padding: 1% 3%;
+    margin: .8% 0;
+ }
+
+ li a {
+    text-decoration: none;
+    color: #000;
+ }
+
+ ul li:hover {
+    background-color: #fca03d;
+ }
+
+ section {
+    width: 70%;
+    margin: 5% auto;
+ }
+
+ h2 {
+    margin: 2% auto;
+ }
+ /* dashboard css */
+
+ .dashboard {
+    display: flex;
+    min-height: 100dvh;
+ }
+
+ aside {
+    background-color: #ccc;
+    width: 20%;
+    height: 90dvh;
+ }
+
+ .dashboard section {
+    width: 80%;
+ }
