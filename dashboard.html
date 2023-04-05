@@ -1,47 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard.</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/styles.css'>
-</head>
-<body>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
+      .dashboard-page {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .dashboard-page header {
+        background-color: #fca03d;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      ul li {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+      }
+
+       li {
+        list-style: none;
+      }
+
+      h1 {
+        margin: 1.5%;
+       }
+
+      .dashboard-main {
+        display: grid;
+        grid-template-columns: .15fr 1fr;
+        min-height: 90dvh;
+        font-size: 1.5em;
+      }
+
+      .dashboard-main aside{
+        background-color: rgb(232, 232, 232);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-height: 90dvh;
+        text-align: center;
+      }
+      
+      aside nav {
+        display: flex;
+        flex-direction: column;
+        min-height: 30dvh;
+        justify-content: space-evenly;
+      }
+
+      nav a {
+        padding: 5% 0;
+        margin: 1rem;
+        border: 3px solid rgb(58, 58, 58);
+        background-color: aliceblue;
+      }
+      
+      nav a:hover{
+        background-color: #fca03d;
+        color: white;
+        font-weight: 700;
+        border: 5px solid rgb(58, 58, 58);
+      }
+
+      .user_profile {
+        border: 2px solid black;
+        background-color: blanchedalmond;
+        padding: 10% 0;
+      }
+
+      .dashboard-main section {
+        overflow-y: scroll;
+        scroll-snap-type: mandatory;
+      }
+      
+      .sections {
+        border: 2px double cadetblue;
+        width: 60%;
+        margin: auto;
+        margin-top: 2%;
+        padding: 2% 0;
+      }
+      
+      .section_title {
+        text-align: center;
+      }
+
+      .labels {
+        display: block;
+        padding: 2% 0;
+        margin-left: 5%;
+      }
+
+      .scroll_buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        bottom: 0;
+      }
+      .scroll_buttons button {
+        padding: 1.5% 4%;
+        margin-top: 4%;background-color: aliceblue;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body class="dashboard-page">
     <header>
-        <h1><a href="#">fitPal<b>.</b></a></h1>
+      <h1>
+        <a href="#">fitPal<b>.</b></a>
+      </h1>
     </header>
 
     <main class="dashboard-main">
-        <aside>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Stats</a>
-                    </li>
-                    <li>
-                        <a href="">Diet</a>
-                    </li>
-                    <li>
-                        <a href="">Exercise</a>
-                    </li>
-                </ul>
-            </nav>
+      <aside>
+        <nav>
+          <a href="">Dashboard</a>
+          <a href="">Goals</a>
+          <a href="">Diet</a>
+          <a href="">Exercise</a>
+        </nav>
 
-            <div>
-                <span>
-                    <a href="">Profile</a>
-                </span>
-            </div>
-
-        </aside>
-    
-        <section>
-    
+        <div class="user_profile">
+          <span>
+            <a href="">Profile</a>
+          </span>
+        </div>
+      </aside>
+      
+      <section>
+        <div class="fitness_goal_section sections">
+          <div class="section_title">
+            Whats your fitness Goal?
+          </div>
+          <div>
+            <label class="labels">
+              <input type="radio">
+              <span>Losing Weight</span>
+            </label>
+            <label class="labels">
+              <input type="radio">
+              <span>Gain Weight</span>
+            </label>
+            <label class="labels">
+              <input type="radio">
+              <span>Gain Muscle</span>
+            </label>
+            <label class="labels">
+              <input type="radio">
+              <span>Improving Cardiovascular Health</span>
+            </label>
+          </div>
+        </div>
+        <div class="fitness_level_section sections">
+          <div class="section_title">
+            Select your Fitness level?
+          </div>
+          <div>
+            <label class="labels">
+              <input type="checkbox">
+              <span>Beginner</span>
+            </label>
+            <label class="labels">
+              <input type="checkbox">
+              <span>Intermediate</span>
+            </label>
+            <label class="labels">
+              <input type="checkbox">
+              <span>Experienced</span>
+            </label>
+          </div>
+        </div>
+        <section class="scroll_buttons">
+          <button>Previous</button>
+          <button>Next</button>
         </section>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
