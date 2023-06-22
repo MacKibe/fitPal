@@ -1,2 +1,3 @@
 # fitPal
-Fitness tracker website
+Fitness tracker web application
+
