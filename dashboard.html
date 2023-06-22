@@ -18,9 +18,9 @@
         display: flex;
         flex-direction: column;
       }
-      
+
       .dashboard-page header {
-        background-color: #fca03d;
+        background-color: #8a8a8a;
       }
 
       a {
@@ -34,22 +34,22 @@
         gap: 2%;
       }
 
-       li {
+      li {
         list-style: none;
       }
 
       h1 {
         margin: 1.5%;
-       }
+      }
 
       .dashboard-main {
         display: grid;
-        grid-template-columns: .15fr 1fr;
+        grid-template-columns: 0.15fr 1fr;
         min-height: 90dvh;
         font-size: 1.5em;
       }
 
-      .dashboard-main aside{
+      .dashboard-main aside {
         background-color: rgb(232, 232, 232);
         display: flex;
         justify-content: space-between;
@@ -57,7 +57,7 @@
         max-height: 90dvh;
         text-align: center;
       }
-      
+
       aside nav {
         display: flex;
         flex-direction: column;
@@ -71,8 +71,8 @@
         border: 3px solid rgb(58, 58, 58);
         background-color: aliceblue;
       }
-      
-      nav a:hover{
+
+      nav a:hover {
         background-color: #fca03d;
         color: white;
         font-weight: 700;
@@ -89,7 +89,7 @@
         overflow-y: scroll;
         scroll-snap-type: mandatory;
       }
-      
+
       .sections {
         border: 2px double cadetblue;
         width: 60%;
@@ -97,7 +97,7 @@
         margin-top: 2%;
         padding: 2% 0;
       }
-      
+
       .section_title {
         text-align: center;
       }
@@ -115,10 +115,11 @@
         margin: auto;
         bottom: 0;
       }
-      
+
       .scroll_buttons button {
         padding: 1.5% 4%;
-        margin-top: 4%;background-color: aliceblue;
+        margin-top: 4%;
+        background-color: aliceblue;
         font-size: 1.2rem;
       }
     </style>
@@ -145,46 +146,42 @@
           </span>
         </div>
       </aside>
-      
+
       <section>
         <div class="fitness_goal_section sections">
-          <div class="section_title">
-            Whats your fitness Goal?
-          </div>
+          <div class="section_title">Whats your fitness Goal?</div>
           <div>
             <label class="labels">
-              <input type="radio">
+              <input type="radio" />
               <span>Losing Weight</span>
             </label>
             <label class="labels">
-              <input type="radio">
+              <input type="radio" />
               <span>Gain Weight</span>
             </label>
             <label class="labels">
-              <input type="radio">
+              <input type="radio" />
               <span>Gain Muscle</span>
             </label>
             <label class="labels">
-              <input type="radio">
+              <input type="radio" />
               <span>Improving Cardiovascular Health</span>
             </label>
           </div>
         </div>
         <div class="fitness_level_section sections">
-          <div class="section_title">
-            Select your Fitness level?
-          </div>
+          <div class="section_title">Select your Fitness level?</div>
           <div>
             <label class="labels">
-              <input type="checkbox">
+              <input type="checkbox" />
               <span>Beginner</span>
             </label>
             <label class="labels">
-              <input type="checkbox">
+              <input type="checkbox" />
               <span>Intermediate</span>
             </label>
             <label class="labels">
-              <input type="checkbox">
+              <input type="checkbox" />
               <span>Experienced</span>
             </label>
           </div>
